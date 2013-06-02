@@ -5,7 +5,7 @@ class IndexAction extends Action {
 	$this->show('Hello world');
     }
     public function news(){//This function will correspond with one page
-	$Data = M('tbl_test');//The parameter is data table name.
+	$Data = M('test');//The parameter is data table name.
 	$this->data = $Data->select();//this->data will use for front-end
 	$this->display();
     }

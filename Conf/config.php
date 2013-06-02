@@ -7,6 +7,6 @@ return array(
 	'DB_USER' => 'root',
 	'DB_PWD'  => '123456',
 	'DB_PORT' => 3306,
-	'DB_PREFIX' => '',//This is necessary
+	'DB_PREFIX' => 'tpl_',//This is necessary
 );
 ?>

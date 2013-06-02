@@ -1,0 +1,12 @@
+<html>
+<head><title>Edit</title></head>
+<body>
+<form id="Form1" method="post" action="__URL__/update"> <!--__URL__ is common URL -->
+<input type="hidden" name="id" value="{$news_data.id}"> <!--Hidden attribute is necessary! -->
+Title <input type="text" name="title" value="{$news_data.title}">
+Author <input type="text" name="author" value="{$news_data.author}">
+Content <input type="textarea" name="content" value="{$news_data.content}">
+<input type="submit" name="submit">
+</form>
+</body>
+</html>

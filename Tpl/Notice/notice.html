@@ -1,0 +1,12 @@
+<table align="center" width=50%>
+<volist name="notice_data" id="vo">
+<tr><td>{$vo.id} </td><td> {$vo.author}</td><td>{$vo.title}</td></tr>
+</volist>
+</table>
+
+<form action="__URL__/insert">
+<input type="text",name="author"></input><br/>
+<input type="text", name="title"></input><br/>
+<input type="textarea", name="content"></input><br/>
+<input type="submit">
+</form>

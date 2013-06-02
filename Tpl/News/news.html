@@ -1,0 +1,11 @@
+<table align="center" width="50%">
+<volist name="news_list" id="vo">
+<tr><td><a href="__URL__/edit/id/{$vo.id}">Edit</a> | <a href="__URL__/del/id/{$vo.id}">Delete</a></td><td>{$vo.title}</td><td>{$vo.author}</td></tr>
+</volist>
+
+<form method="post" action="__URL__/insert">
+Title: <input type="txt" name="title"> <br/>
+Author: <input type="txt" name="author"> <br/>
+Content:<Textarea name="content" rows="5" cols="45"></textarea><br/>
+<input type="submit" value="Submit">
+</form>
